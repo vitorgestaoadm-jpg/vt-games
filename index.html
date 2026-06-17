@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VT GAMES PRO MAX V8</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar pro-header">
+    <a class="brand" href="#inicio" aria-label="VT Games"><span>VT</span><strong>GAMES</strong><small>PRO MAX V8</small></a>
+
+    <div class="search"><input id="searchInput" placeholder="Buscar produtos..." /><span>⌕</span></div>
+
+    <div class="header-perks">
+      <div><span>🛡️</span><b>Compra</b><small>100% Segura</small></div>
+      <div><span>⚡</span><b>Entrega</b><small>Imediata</small></div>
+      <div><span>🎧</span><b>Atendimento</b><small>Rápido</small></div>
+    </div>
+
+    <a class="cart header-cart" href="#produtos">🛒 <b id="cartCount">0</b><small>Carrinho</small></a>
+  </header>
+
+  <main id="inicio" class="page-wrap">
+    <section class="hero hero-clean">
+      <button class="hero-arrow left" aria-label="Anterior">‹</button>
+      <div class="hero-content">
+        <h1>Sua loja de jogos</h1>
+        <h2>Gift Cards e Assinaturas</h2>
+        <p>Entrega imediata! <span>⚡</span></p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#produtos">Ver produtos <span>→</span></a>
+        </div>
+      </div>
+      <button class="hero-arrow right" aria-label="Próximo">›</button>
+      <div class="hero-dots"><span class="active"></span><span></span><span></span></div>
+    </section>
+
+    <section class="categories" id="giftcards">
+      <div class="section-title"><h3>Categorias</h3><a href="#produtos">Ver todas →</a></div>
+      <div class="cat-grid category-image-grid">
+        <button class="category-card steam" data-cat="Steam" aria-label="Steam"><span>Steam</span></button>
+        <button class="category-card playstation" data-cat="PlayStation" aria-label="PlayStation"><span>PlayStation</span></button>
+        <button class="category-card xbox" data-cat="Xbox" aria-label="Xbox"><span>Xbox</span></button>
+        <button class="category-card google-play" data-cat="Google Play" aria-label="Google Play"><span>Google Play</span></button>
+        <button class="category-card jogos" data-cat="Jogos" aria-label="Jogos"><span>Jogos</span></button>
+        <button class="category-card assinaturas" data-cat="Assinaturas" aria-label="Assinaturas"><span>Assinaturas</span></button>
+      </div>
+    </section>
+
+    <section class="trust-row pro-trust">
+      <div>🛡️ <span>Compra<br><b>100% segura</b></span></div>
+      <div>⚡ <span>Entrega<br><b>imediata</b></span></div>
+      <div>🎧 <span>Atendimento<br><b>rápido</b></span></div>
+      <div>✅ <span>Melhores<br><b>preços</b></span></div>
+    </section>
+
+    
+<section class="promo-slider-section">
+  <div class="promo-slider" id="promoSlider">
+    <div class="promo-slide active">
+      <span class="promo-kicker">OFERTA DO DIA</span>
+      <h2>Gift Cards com Entrega Rápida</h2>
+      <p>Steam, PlayStation, Xbox e Google Play direto pelo WhatsApp.</p>
+      <a href="#produtos" class="btn btn-primary">Ver ofertas</a>
+    </div>
+    <div class="promo-slide">
+      <span class="promo-kicker">TOP VENDAS</span>
+      <h2>Game Pass, Robux e Free Fire</h2>
+      <p>Os produtos mais procurados por gamers em um só lugar.</p>
+      <a href="#mais-vendidos" class="btn btn-primary">Mais vendidos</a>
+    </div>
+    <div class="promo-slide">
+      <span class="promo-kicker">PROMOÇÃO RELÂMPAGO</span>
+      <h2>Finalize pelo WhatsApp</h2>
+      <p>Monte seu carrinho e envie seu pedido formatado automaticamente.</p>
+      <a href="#produtos" class="btn btn-primary">Comprar agora</a>
+    </div>
+  </div>
+  <div class="promo-dots">
+    <button class="promo-dot active" data-slide="0"></button>
+    <button class="promo-dot" data-slide="1"></button>
+    <button class="promo-dot" data-slide="2"></button>
+  </div>
+</section>
+
+<section class="deal-section" id="ofertas">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">PROMOÇÕES</span>
+      <h2>🔥 Ofertas do Dia</h2>
+    </div>
+    <div class="countdown" aria-label="Contador da promoção">
+      <span>Termina em</span>
+      <strong id="dealCountdown">00:00:00</strong>
+    </div>
+  </div>
+  <div class="deal-grid" id="dealGrid"></div>
+</section>
+
+<section class="products" id="produtos">
+      <div class="section-title"><h3>Produtos em destaque</h3><a id="clearFilter">Limpar filtro</a></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="how" id="como-funciona">
+      <h3>Como a compra funciona</h3>
+      <div class="steps">
+        <div><b>1</b><h4>Escolha o produto</h4><p>Clique no item desejado na loja.</p></div>
+        <div><b>2</b><h4>Chame no WhatsApp</h4><p>A mensagem já vai pronta com o produto.</p></div>
+        <div><b>3</b><h4>Pague por PIX</h4><p>Você confirma o valor e faz o pagamento.</p></div>
+        <div><b>4</b><h4>Receba rápido</h4><p>O código é enviado direto no WhatsApp.</p></div>
+      </div>
+    </section>
+  
+    <section class="stats">
+      <div><strong>5000+</strong><span>Pedidos Entregues</span></div>
+      <div><strong>2300+</strong><span>Clientes Satisfeitos</span></div>
+      <div><strong>99%</strong><span>Avaliações Positivas</span></div>
+    </section>
+
+    <section class="best-sellers">
+      <div class="section-title"><h3>🔥 Mais Vendidos</h3></div>
+      <div class="seller-list">
+        <div class="seller-card">Steam R$100</div>
+        <div class="seller-card">Game Pass Ultimate</div>
+        <div class="seller-card">PlayStation R$100</div>
+        <div class="seller-card">Robux</div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h3>Avaliações</h3>
+      <div class="review-grid">
+        <div>★★★★★<p>Entrega em menos de 5 minutos.</p></div>
+        <div>★★★★★<p>Atendimento excelente.</p></div>
+        <div>★★★★★<p>Compro sempre na VT GAMES.</p></div>
+      </div>
+    </section>
+
+</main>
+
+  <aside class="floating-cart" id="floatingCart">
+    <h3>Carrinho de compras</h3>
+    <div id="cartItems"><p>Nenhum produto selecionado.</p></div>
+    <strong id="cartTotal">Total: R$ 0,00</strong>
+    <a class="btn primary full" id="checkoutWhats" target="_blank" rel="noopener">Finalizar no WhatsApp</a>
+    <button type="button" id="pixCheckoutBtn" class="pix-checkout-btn">💳 Pagar com PIX</button>
+    <small class="checkout-hint">O pedido será enviado automaticamente com produtos, quantidades e total.</small>
+  </aside>
+
+  <footer>
+    <b>VT GAMES</b>
+    <p>Loja digital de jogos, gift cards e assinaturas. Atendimento e compra via WhatsApp.</p>
+  </footer>
+
+<div class="pix-modal" id="pixModal" aria-hidden="true">
+  <div class="pix-modal-card">
+    <button type="button" class="pix-close" id="pixClose" aria-label="Fechar">×</button>
+    <span class="pix-kicker">CHECKOUT PIX</span>
+    <h2>Pagamento Mercado Pago</h2>
+    <p class="pix-help">Revise seu pedido e gere o QR Code PIX.</p>
+
+    <div class="pix-summary" id="pixSummary"></div>
+
+    <form class="pix-form" id="pixForm">
+      <label>Nome
+        <input type="text" id="payerName" placeholder="Seu nome" required>
+      </label>
+      <label>E-mail
+        <input type="email" id="payerEmail" placeholder="email@exemplo.com" required>
+      </label>
+      <button type="submit" class="pix-submit">Gerar QR Code PIX</button>
+    </form>
+
+    <div class="pix-result" id="pixResult" hidden>
+      <div class="pix-status" id="pixStatus">Aguardando pagamento</div>
+      <img id="pixQr" class="pix-qr" alt="QR Code PIX">
+      <label>PIX Copia e Cola
+        <textarea id="pixCode" readonly></textarea>
+      </label>
+      <button type="button" id="copyPix" class="pix-copy">Copiar código PIX</button>
+      <a id="openPayment" class="pix-open" target="_blank" rel="noopener">Abrir pagamento</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
