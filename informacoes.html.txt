@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informações - VT GAMES</title>
+<style>
+body{
+background:#0a0f1f;
+color:white;
+font-family:Arial,sans-serif;
+margin:0;
+padding:20px;
+}
+.container{
+max-width:1000px;
+margin:auto;
+}
+.card{
+background:#121a33;
+padding:20px;
+margin-bottom:20px;
+border-radius:12px;
+border:1px solid #2f4d8f;
+}
+h1{color:#00e5ff;}
+h2{color:#9b5cff;}
+a{color:#00e5ff;}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>VT GAMES - Informações</h1>
+
+<div class="card">
+<h2>Política de Privacidade</h2>
+<p>Seus dados são utilizados apenas para processar pedidos e prestar suporte ao cliente.</p>
+</div>
+
+<div class="card">
+<h2>Termos de Uso</h2>
+<p>Ao utilizar a VT GAMES, o cliente concorda com os termos da plataforma e com a natureza digital dos produtos comercializados.</p>
+</div>
+
+<div class="card">
+<h2>Política de Reembolso</h2>
+<p>Após a entrega de códigos digitais, gift cards ou assinaturas, não será possível realizar reembolso. Casos de falha na entrega serão analisados individualmente.</p>
+</div>
+
+<div class="card">
+<h2>Contato</h2>
+<p>Atendimento através do WhatsApp oficial da VT GAMES.</p>
+</div>
+
+<p><a href="index.html">← Voltar para a loja</a></p>
+
+</div>
+</body>
+</html>
